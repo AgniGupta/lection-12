@@ -1,0 +1,24 @@
+
+<html>
+<body>
+<h1>Hello World</h1>
+<script type="text/javascript" charset="utf-8">
+function sum() {
+let numbers = [];
+  while (true) {
+    let value = prompt("Число", 0);
+    if (value === " "
+    || value === null 
+    || !isFinite(value))
+    break;
+    numbers.push(+value);
+  }
+  let sum = 0;
+  for (let number of numbers) {sum += number;}
+  return sum;
+}
+
+alert( sum() );
+</script>
+</body>
+</html>
